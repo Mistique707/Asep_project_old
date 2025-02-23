@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .titlebar-actions {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .book-trip {
+        width: 100%;
+    }
+    .search-input, .search-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

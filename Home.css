@@ -1,0 +1,471 @@
+/*Tools*****************************************************************************************************************************************************************************/
+
+.float-right{
+    float:right;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-left img {
+    width:250px; /* Set a fixed width for the logo */
+    height: auto;
+    display: block; /* Ensures proper block layout */
+}
+
+.clear-both{
+    clear: both;
+}
+
+.centre-align{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.ele-pad-r{
+    padding-right: 7%;
+}
+.ele-pad-b{
+    padding-bottom: 2%;
+}
+.ele-pad-t{
+    padding-top: 2%;
+}
+.ele-pad-l{
+    padding-left: 7%;
+}
+
+.bot-pad{
+    padding-bottom: 2%;
+}
+.top-pad{
+    padding-top: 2%;
+}
+.right-pad{
+    padding-right: 2%;
+}
+.left-pad{
+    padding-left: 2%;
+}
+
+.titles{
+    font-family: "teko", serif;
+    font-size: 500%;
+    font-weight: 400;
+    color: black;
+}
+.subtitles{
+    padding-bottom: 2%;
+    font-family: "teko", serif;
+    font-size: 250%;
+    color: #424242;
+}
+.text{
+    font-family: "Roboto", serif;
+    font-weight: 350;
+    font-size: 125%;
+}
+.subtext{
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-size: 100%;
+}
+
+.temborder{
+    border: 1px solid red;
+}
+
+.button{
+    background-color: #424242;
+    color: white;
+    padding: 1% 2%;
+    border-radius: 5px;
+    text-align: center;
+}
+.button:hover{
+    background-color: #156768;
+    
+}
+
+.u-line{
+    border-bottom: 3px solid #c2c2c2;
+}
+/*Appearances***********************************************************************************************************************************************************************/
+body{
+    background-color: #F5F5F5;
+    color: #424242;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    font-size: 18px;
+  }
+
+/*TitleBar________________________________*/
+.titlebar{
+    padding: 1% 0;
+    background-color: #48CFCB;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.title-elements{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titlebar-actions{
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds space between elements */
+}
+/*HeroBar________________________________*/
+.hero{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.hero-elements{
+    width: 80%;
+}
+.book-trip{
+    width: 50%;
+}
+
+.bbar-svg{
+    padding: 8% 0 0 0;
+}
+.hbar-tips{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.hero-tip-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 27%;
+    text-align: center;
+}
+
+.hero-tip-width .material-icons {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-tip-width .subtitles {
+    margin-bottom: 10px;
+}
+
+/*Whybar________________________________*/
+.whybar{
+    background-color: #229799;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.whybar-elements{
+    width: 85%;
+}
+
+.whybar-inf{
+    width: 50%;
+    padding-top: 13%;
+}
+
+/*rideoff________________________________*/
+.rideoff{
+    background-color: #229799;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding-right: 25%;
+}
+.rideoff-elements{
+    width: 60%;
+}
+
+.rioff-inf{
+    width: 90%;
+    padding-top: 35%;
+}
+
+/*samtrip________________________________*/
+.samtrip{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.samtrip-elements{
+    width: 50%;
+}
+
+.poptr-ex{
+    width: 75%;
+}
+
+
+/*helpage________________________________*/
+.helpage{
+    background-color: #229799;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding-top: 2%;
+}
+
+.helpage-elements{
+    width: 70%;
+}
+
+.helpage-inf{
+    width: 70%;
+}
+
+.helpage-rows{
+    display: flex;
+}
+
+.helpage-sub-elements{
+    width: 70%;
+}
+
+/*SEARCH PAGE***********************************************************************************************************************************************************************/   
+.search-input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 20%; /* Adjust as needed */
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.ride-list {
+    width: 80%;
+    margin: 0 auto; /* Center the list */
+}
+.ride-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    overflow: hidden; /* Clear floats */
+}
+.ride-item .float-right {
+    padding-top: 5px;
+}
+
+/*Publish Ride  PAGE***********************************************************************************************************************************************************************/
+
+.publish-form {
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.publish-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.publish-input[type="datetime-local"] {
+    width: 100%;
+}
+
+.publish-input[type="number"] {
+    width: 100%;
+}
+
+.publish-input[type="text"] {
+    width: 100%;
+}
+
+.publish-input[type="textarea"] {
+    height: 100px;
+    resize: vertical;
+}
+
+.publish-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    align-self: center;
+    width: 30%;
+}
+
+/*ACCOUNT MENU DROPDOWN***********************************************************************************************************************************************************************/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dropbtn{
+background-color: transparent;
+border: none;
+cursor: pointer;
+display: flex;
+}
+
+/*PROFILE PAGE***********************************************************************************************************************************************************************/
+
+.profile-container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-label {
+    font-weight: bold;
+}
+
+.profile-value {
+    margin-bottom: 10px;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.logout-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.logout-button:hover {
+    background-color: #bd2130;
+}
+
+
+.edit-form {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.edit-form input{
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.save-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    align-self: center;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-input {
+    flex: 1 1 20%;
+    margin: 5px;
+}
+
+.search-button {
+    flex: 1 1 20%;
+    margin: 5px;
+}
+
+@media (max-width: 800px) {
+    .titlebar-actions {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .book-trip {
+        width: 100%;
+    }
+    .search-input, .search-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .dropdown-content {
+        min-width: 100px;
+      }
+}
