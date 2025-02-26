@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Carpool System - Search</title>
+    <link rel="stylesheet" href="CSS/Phone-search.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+    /* Mobile-first CSS */
+    :root {
+        --primary-color: #229799;
+        --secondary-color: #48CFCB;
+        --text-color: #424242;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: "Roboto", sans-serif;
+        background-color: #F5F5F5;
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+
+    .container {
+        width: 95%;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+
+    /* Header */
+    .titlebar {
+        background-color: var(--secondary-color);
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titlebar-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-family: "Teko", sans-serif;
+        font-size: 2rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: black;
+        text-decoration: none;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-family: "Teko", sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .search-form {
+        display: grid;
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .button {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    /* Features Grid */
+    .features {
+        display: grid;
+        gap: 25px;
+        margin: 30px 0;
+    }
+
+    .feature-card {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .feature-icon {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .feature-title {
+        font-family: "Teko", sans-serif;
+        font-size: 1.8rem;
+        margin: 10px 0;
+    }
+
+    /* Responsive Images */
+    .responsive-img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+        padding: 30px 0;
+    }
+
+    .faq-grid {
+        display: grid;
+        gap: 25px;
+    }
+
+    .faq-item {
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 15px;
+    }
+
+    .faq-question {
+        font-family: "Teko", sans-serif;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+    }
+
+    /* Mobile Menu */
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: white;
+        padding: 15px;
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .menu-items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 0.9rem;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+        .desktop-nav { display: none; }
+        .mobile-menu { display: block; }
+        
+        .hero-title { font-size: 2rem; }
+        .feature-title { font-size: 1.5rem; }
+        .button { width: 100%; }
+    }
+
+    @media (min-width: 769px) {
+        .container { width: 85%; }
+        .features { grid-template-columns: repeat(3, 1fr); }
+        .faq-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="titlebar">
+        <div class="container">
+           <div class="titlebar-content">
+                <a href="#" class="logo">Carpool System</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Find a Ride</h1>
+                <form class="search-form">
+                    <input type="text" placeholder="Leaving from" class="search-input">
+                    <input type="text" placeholder="Going to" class="search-input">
+                    <input type="date" placeholder="When" class="search-input">
+                    <input type="number" placeholder="Passengers" class="search-input">
+                    <button type="submit" class="button">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Popular Rides -->
+        <section class="container">
+            <div class="samtrip-title ele-pad-b titles">
+                Popular Rides
+            </div>
+            <div class="ride-list">
+                <div class="ride-item">
+                    <div class="float-left text">Bibvewadi to Kothrud</div>
+                    <div class="float-right subtext">₹500</div>
+                    <div class="clear-both subtext">Tomorrow, 9:00 AM</div>
+                </div>
+                <div class="ride-item">
+                    <div class="float-left text">Bibvewadi to Hadapasar</div>
+                    <div class="float-right subtext">₹1200</div>
+                    <div class="clear-both subtext">Today, 6:00 PM</div>
+                </div>
+                <div class="ride-item">
+                    <div class="float-left text">Bibvewadi to Baner</div>
+                    <div class="float-right subtext">₹800</div>
+                    <div class="clear-both subtext">Tomorrow, 2:00 PM</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section container">
+            <h2 class="hero-title">Carpool FAQs</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">How to book?</h3>
+                    <p>Use our app or website to search, select, and confirm your ride.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Cancellation policy?</h3>
+                    <p>Cancel anytime up to 2 hours before departure for full refund.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Mobile Bottom Menu -->
+    <nav class="mobile-menu">
+        <div class="menu-items">
+            <a href="#" class="menu-item">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+            </a>
+            <a href="search.html" class="menu-item">
+                <i class="material-icons">search</i>
+                <span>Search</span>
+            </a>
+            <a href="publish.html" class="menu-item">
+                <i class="material-icons">add</i>
+                <span>Publish</span>
+            </a>
+            <a href="profile.html" class="menu-item">
+                <i class="material-icons">person</i>
+                <span>Profile</span>
+            </a>
+        </div>
+    </nav>
+</body>
+</html>
