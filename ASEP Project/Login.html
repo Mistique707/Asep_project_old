@@ -3,82 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carpool System - Login</title>
-    <link rel="stylesheet" href="CSS/Home.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <title>Login Page</title>
     <style>
+       body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #06f150, #ffffff); 
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding-right: 10%;
+    position: relative;
+}
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('1528970_3546-removebg-preview.png');
+    background-size: 400px 400px;
+    background-repeat: repeat;
+    background-position: top left;
+    opacity: 1; /* Controls transparency */
+    z-index: -1;
+}
+
         .login-container {
-            width: 400px;
-            margin: 100px auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 500px;
+            height: 220px;
+            text-align: center;
+            justify-content: center;
         }
-
         .login-container h2 {
-            text-align: center;
             margin-bottom: 20px;
+            color: #333;
         }
-
-        .login-input {
-            width: calc(100% - 22px);
-            padding: 10px;
-            margin-bottom: 15px;
+        /* .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 12px;
+            margin: 10px 0;
             border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
+            border-radius: 6px;
             font-size: 16px;
-        }
-
-        .login-button {
+        } */
+        .login-container button {
             width: 100%;
-            background-color: #4CAF50;
-            border: none;
+            padding: 12px;
+            margin: 10px;
+            background: #4CAF50;
             color: white;
-            padding: 14px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
+            border: none;
+            border-radius: 6px;
             font-size: 16px;
-            margin: 4px 2px;
             cursor: pointer;
-            border-radius: 4px;
+            transition: background;
         }
-
-        .login-button:hover {
-            background-color: #45a049;
-        }
-
-        .signup-link {
-            text-align: center;
-            margin-top: 15px;
+        .login-container button:hover {
+            font-size: 17px;
+            color: #ffffff;
+            background: #4CAF50;
+            box-shadow: rgb(88, 88, 88) 0 0 5px;
+            
         }
     </style>
 </head>
-<body>
-    <main>
-        <!TITLEBAR***********************************************************************************>    
-        <div class="titlebar ">
-            <div class="title-elements centre-align">
-                <a href="Index.html">
-                <div class="float-left"><img src="images/Connect.png" width="70%"></div>
-                </a>
-                </div>
-                </div>
-        <div class="login-container">
-            <h2>Login</h2>
-            <input type="text" id="username" class="login-input" placeholder="Username">
-            <input type="password" id="password" class="login-input" placeholder="Password">
-            <button class="login-button" onclick="login()">Login</button>
-            <div class="signup-link">
-                Don't have an account? <a href="Signup.html">Sign Up</a>
-            </div>
-        </div>
-        <script src="JS/login.js"></script>
-    </main>
+<body> 
+    <div class="login-container">
+        
+        <h2>Login/ Register</h2>
+       
+            <button type="submit">Login using google</button>
+
+            <button type="submit">Register using google</button>
+        </form>
+    </div>
 </body>
 </html>
