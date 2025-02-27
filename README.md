@@ -7,8 +7,6 @@ Team:-  Arjun the chad
         Vastav the mature
         Arko the dank
 
-IM BOUTTA SHIT MYSELF
-
 If youre making changes in the repo, please please please add a description when pushing a new commit change.
 
 There is a new file for changes, suggest what you want there, and then mark if that was done, dont remove them, well need that if something goes wrong and we need to restore
